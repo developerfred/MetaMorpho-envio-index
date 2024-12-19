@@ -1,0 +1,184 @@
+type MetaMorpho_AccrueInterest {
+  id: ID!
+  newTotalAssets: BigInt!
+  feeShares: BigInt!
+}
+
+type MetaMorpho_Approval {
+  id: ID!
+  owner: String!
+  spender: String!
+  value: BigInt!
+}
+
+type MetaMorpho_Deposit {
+  id: ID!
+  sender: String!
+  owner: String!
+  assets: BigInt!
+  shares: BigInt!
+}
+
+type MetaMorpho_EIP712DomainChanged {
+  id: ID!
+}
+
+type MetaMorpho_OwnershipTransferStarted {
+  id: ID!
+  previousOwner: String!
+  newOwner: String!
+}
+
+type MetaMorpho_OwnershipTransferred {
+  id: ID!
+  previousOwner: String!
+  newOwner: String!
+}
+
+type MetaMorpho_ReallocateSupply {
+  id: ID!
+  caller: String!
+  event_id: String!
+  suppliedAssets: BigInt!
+  suppliedShares: BigInt!
+}
+
+type MetaMorpho_ReallocateWithdraw {
+  id: ID!
+  caller: String!
+  event_id: String!
+  withdrawnAssets: BigInt!
+  withdrawnShares: BigInt!
+}
+
+type MetaMorpho_RevokePendingCap {
+  id: ID!
+  caller: String!
+  event_id: String!
+}
+
+type MetaMorpho_RevokePendingGuardian {
+  id: ID!
+  caller: String!
+}
+
+type MetaMorpho_RevokePendingMarketRemoval {
+  id: ID!
+  caller: String!
+  event_id: String!
+}
+
+type MetaMorpho_RevokePendingTimelock {
+  id: ID!
+  caller: String!
+}
+
+type MetaMorpho_SetCap {
+  id: ID!
+  caller: String!
+  event_id: String!
+  cap: BigInt!
+}
+
+type MetaMorpho_SetCurator {
+  id: ID!
+  newCurator: String!
+}
+
+type MetaMorpho_SetFee {
+  id: ID!
+  caller: String!
+  newFee: BigInt!
+}
+
+type MetaMorpho_SetFeeRecipient {
+  id: ID!
+  newFeeRecipient: String!
+}
+
+type MetaMorpho_SetGuardian {
+  id: ID!
+  caller: String!
+  guardian: String!
+}
+
+type MetaMorpho_SetIsAllocator {
+  id: ID!
+  allocator: String!
+  isAllocator: Boolean!
+}
+
+type MetaMorpho_SetSkimRecipient {
+  id: ID!
+  newSkimRecipient: String!
+}
+
+type MetaMorpho_SetSupplyQueue {
+  id: ID!
+  caller: String!
+  newSupplyQueue: [String!]!
+}
+
+type MetaMorpho_SetTimelock {
+  id: ID!
+  caller: String!
+  newTimelock: BigInt!
+}
+
+type MetaMorpho_SetWithdrawQueue {
+  id: ID!
+  caller: String!
+  newWithdrawQueue: [String!]!
+}
+
+type MetaMorpho_Skim {
+  id: ID!
+  caller: String!
+  token: String!
+  amount: BigInt!
+}
+
+type MetaMorpho_SubmitCap {
+  id: ID!
+  caller: String!
+  event_id: String!
+  cap: BigInt!
+}
+
+type MetaMorpho_SubmitGuardian {
+  id: ID!
+  newGuardian: String!
+}
+
+type MetaMorpho_SubmitMarketRemoval {
+  id: ID!
+  caller: String!
+  event_id: String!
+}
+
+type MetaMorpho_SubmitTimelock {
+  id: ID!
+  newTimelock: BigInt!
+}
+
+type MetaMorpho_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+}
+
+type MetaMorpho_UpdateLastTotalAssets {
+  id: ID!
+  updatedTotalAssets: BigInt!
+}
+
+type MetaMorpho_Withdraw {
+  id: ID!
+  sender: String!
+  receiver: String!
+  owner: String!
+  assets: BigInt!
+  shares: BigInt!
+}
+
